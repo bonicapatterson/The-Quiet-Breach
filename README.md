@@ -42,7 +42,7 @@ The project demonstrates the intersection of data engineering, statistical analy
 
 For the first 60 days, all 50 employees behave within expected parameters. Threat scores cluster between 5 and 20 — noise consistent with normal variation in any enterprise environment. Access occurs during business hours. Downloads and exports fall within personal baseline ranges. Nothing appears unusual.
 
-> 📸 **Screenshot placement:** `Threat Score Timeline` — the flat left portion of all five lines, Oct 1–Nov 15
+> ![Threat Score Timeline](https://drive.google.com/uc?export=view&id=1mXrJqWcupaJIyxJy-Rz2PccN8Lo5fgJs) `Threat Score Timeline` — the flat left portion of all five lines, Oct 1–Nov 15
 
 ---
 
