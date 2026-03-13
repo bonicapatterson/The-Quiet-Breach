@@ -52,9 +52,9 @@ Around day 61, five employees begin to show subtle but measurable behavioral dri
 
 This is precisely the window insider threats exploit. The behavioral change is gradual enough to avoid triggering rule-based alerts, but a rolling baseline model flags it immediately.
 
-> 📸 **Screenshot placement:** `Access Heatmap` — red hotspots visible at hours 2–4 and 20–23 across all days of the week
+> ![Access Heatmap](https://drive.google.com/uc?export=view&id=1YpUmkRk0twLYyaNqSDTMUgPevIMOsV7p) `Access Heatmap` — red hotspots visible at hours 2–4 and 20–23 across all days of the week
 
-> 📸 **Screenshot placement:** `Threat Score Timeline` — mid-chart, Nov 15–Dec 1, scores beginning to rise above the HIGH Alert Threshold line at 40
+> ![Threat Score Timeline](https://drive.google.com/uc?export=view&id=1mXrJqWcupaJIyxJy-Rz2PccN8Lo5fgJs) `Threat Score Timeline` — mid-chart, Nov 15–Dec 1, scores beginning to rise above the HIGH Alert Threshold line at 40
 
 ---
 
@@ -64,9 +64,9 @@ In the final 30 days, all five flagged employees shift decisively into anomalous
 
 By mid-December, four of the five users have breached the CRITICAL threshold (score ≥ 70). The fifth crosses it days later.
 
-> 📸 **Screenshot placement:** `Off-Hours Anomaly` — all five bars showing 378–407 total off-hours events
+> ![Off-Hours Anomaly](https://drive.google.com/uc?export=view&id=19WEvLGQRg_jq3Wx4Yay7t7nFdt9uggQ3) `Off-Hours Anomaly` — all five bars showing 378–407 total off-hours events
 
-> 📸 **Screenshot placement:** `Exfil Spike Detection` — bars showing 317–341 total download+export actions per user
+> ![Exfil Spike Detection](https://drive.google.com/uc?export=view&id=1T0llCaRV9cqdnxcOmbywvo3LSfyKreNy) `Exfil Spike Detection` — bars showing 317–341 total download+export actions per user
 
 > 📸 **Screenshot placement:** `Threat Score Timeline` — right side of chart, Dec 1–28, sharp upward spikes to 75–89
 
@@ -78,9 +78,9 @@ When all 50 employees are visualized simultaneously by peak threat tier, the pop
 
 The gap is not subtle. Normal users cap at a peak score of 46. The five flagged users range from 75 to 89 — a separation of nearly two standard deviations from the normal population's upper bound.
 
-> 📸 **Screenshot placement:** `Threat Level Distribution` treemap — the full 50-employee view showing the five CRITICAL red blocks at bottom-right
+> ![Threat Level Distribution](https://drive.google.com/uc?export=view&id=1iHFtCUWptOAr9QAg8AowE9CRL8Xc3FGV) `Threat Level Distribution` treemap — the full 50-employee view showing the five CRITICAL red blocks at bottom-right
 
-> 📸 **Screenshot placement:** `Top Flagged Users` — the visual break between the top 5 red bars (75–89) and the remaining orange bars (40–46)
+> ![Top Flagged Users](https://drive.google.com/uc?export=view&id=1J5R88wCEmzoqGk_LRr75xqg-ChDS_yUz) `Top Flagged Users` — the visual break between the top 5 red bars (75–89) and the remaining orange bars (40–46)
 
 ---
 
