@@ -30,9 +30,9 @@ This project simulates an enterprise security operations center (SOC) scenario i
 
 The project demonstrates the intersection of data engineering, statistical analysis, and security analytics — a rare combination that enables both technical and non-technical stakeholders to understand, investigate, and act on findings.
 
-**Dataset:** 16,261 simulated access log events across 50 employees over a 90-day observation window (October–December 2024)
+**Dataset:** <br>16,261 simulated access log events across 50 employees over a 90-day observation window (October–December 2024)
 
-**Flagged Users:** 5 employees reached CRITICAL threat tier with peak scores between 75–89 out of 100
+**Flagged Users:** <br>5 employees reached CRITICAL threat tier with peak scores between 75–89 out of 100
 
 ---
 
@@ -182,38 +182,38 @@ The published Tableau story contains nine slides navigated sequentially:
 ## Key Findings
 
 **1. Behavioral drift precedes escalation by ~2 weeks.**
-The five flagged users showed measurable score increases beginning around day 61, approximately 14 days before reaching HIGH threshold. This window represents the earliest viable intervention point with a real-time alerting system.
+<br>The five flagged users showed measurable score increases beginning around day 61, approximately 14 days before reaching HIGH threshold. This window represents the earliest viable intervention point with a real-time alerting system.
 
 **2. Off-hours access is the strongest individual signal.**
-With a 25% composite weight and the highest raw deviation (300–400% above personal baseline), off-hours activity was the single most discriminating feature separating flagged from normal users.
+<br>With a 25% composite weight and the highest raw deviation (300–400% above personal baseline), off-hours activity was the single most discriminating feature separating flagged from normal users.
 
 **3. The population separates cleanly.**
-No normal user exceeded a peak threat score of 46.1. All five insider threats exceeded 75.0. The 29-point gap between the highest normal user and the lowest flagged user suggests the scoring model has low false-positive risk at a threshold of 70.
+<br>No normal user exceeded a peak threat score of 46.1. All five insider threats exceeded 75.0. The 29-point gap between the highest normal user and the lowest flagged user suggests the scoring model has low false-positive risk at a threshold of 70.
 
 **4. Exfiltration signals correlate with off-hours access.**
-Download and export spikes co-occurred with off-hours login events in 87% of flagged days, suggesting a consistent pattern of accessing sensitive resources outside monitored hours — consistent with data staging behavior prior to exfiltration.
+<br>Download and export spikes co-occurred with off-hours login events in 87% of flagged days, suggesting a consistent pattern of accessing sensitive resources outside monitored hours — consistent with data staging behavior prior to exfiltration.
 
 **5. Multi-location anomalies appeared in late-stage activity.**
-Location inconsistencies were detected in 3 of 5 flagged users during the final 2 weeks, suggesting either credential sharing, VPN spoofing, or account compromise as a secondary hypothesis worth investigating.
+<br>Location inconsistencies were detected in 3 of 5 flagged users during the final 2 weeks, suggesting either credential sharing, VPN spoofing, or account compromise as a secondary hypothesis worth investigating.
 
 ---
 
 ## Strategic Recommendations
 
 **01 — Immediate Action**
-Place U007 (William Miller), U014 (Jessica White), U023 (Matthew Scott), U031 (Steven Baker), and U045 (George Edwards) under enhanced monitoring. Restrict access to sensitive resource categories pending HR and legal review. Preserve digital evidence chain-of-custody before any employee contact.
+<br>Place U007 (William Miller), U014 (Jessica White), U023 (Matthew Scott), U031 (Steven Baker), and U045 (George Edwards) under enhanced monitoring. Restrict access to sensitive resource categories pending HR and legal review. Preserve digital evidence chain-of-custody before any employee contact.
 
 **02 — Real-Time Alerting**
-Implement automated alerting when any user's 7-day rolling threat score exceeds 40 (HIGH threshold). The current analysis was performed post-hoc over 90 days. A live pipeline would have surfaced these users in the first week of November — potentially weeks earlier.
+<br>Implement automated alerting when any user's 7-day rolling threat score exceeds 40 (HIGH threshold). The current analysis was performed post-hoc over 90 days. A live pipeline would have surfaced these users in the first week of November — potentially weeks earlier.
 
 **03 — Least-Privilege Access Controls**
-Flagged users accessed an average of 8 distinct sensitive resource categories. Normal users accessed 3. Role-based access controls (RBAC) with quarterly access reviews would constrain the blast radius of any future insider threat event.
+<br>Flagged users accessed an average of 8 distinct sensitive resource categories. Normal users accessed 3. Role-based access controls (RBAC) with quarterly access reviews would constrain the blast radius of any future insider threat event.
 
 **04 — Continuous Behavioral Analytics**
-The 14-day rolling window model is production-ready and scalable. Deployment as a scheduled SQL job or dbt model against a live SIEM data feed would enable ongoing monitoring across the full employee population at minimal infrastructure cost.
+<br>The 14-day rolling window model is production-ready and scalable. Deployment as a scheduled SQL job or dbt model against a live SIEM data feed would enable ongoing monitoring across the full employee population at minimal infrastructure cost.
 
 **05 — Insider Threat Response Playbook**
-Establish a formal response protocol that includes legal review triggers, HR notification procedures, digital forensics chain-of-custody requirements, and defined escalation paths to avoid tipping off subjects before evidence is secured.
+<br>Establish a formal response protocol that includes legal review triggers, HR notification procedures, digital forensics chain-of-custody requirements, and defined escalation paths to avoid tipping off subjects before evidence is secured.
 
 ---
 
