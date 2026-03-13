@@ -68,7 +68,7 @@ By mid-December, four of the five users have breached the CRITICAL threshold (sc
 
 > ![Exfil Spike Detection](https://drive.google.com/uc?export=view&id=1T0llCaRV9cqdnxcOmbywvo3LSfyKreNy) `Exfil Spike Detection` — bars showing 317–341 total download+export actions per user
 
-> 📸 **Screenshot placement:** `Threat Score Timeline` — right side of chart, Dec 1–28, sharp upward spikes to 75–89
+> ![Threat Score Timeline](https://drive.google.com/uc?export=view&id=1mXrJqWcupaJIyxJy-Rz2PccN8Lo5fgJs) `Threat Score Timeline` — right side of chart, Dec 1–28, sharp upward spikes to 75–89
 
 ---
 
